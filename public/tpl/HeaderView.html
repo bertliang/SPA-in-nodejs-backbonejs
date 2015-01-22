@@ -1,0 +1,120 @@
+<div class="navbar navbar-inverse navbar-fixed-top navbar-static" >
+    <div class="navbar-inner">
+        <div class="container">
+           <div id="header-menu"> 
+               <ul class="nav">
+                <li class="brand active"><a href="#">My Eatz</a></li>
+        			  <li class="Browse-memu"><a href="#dishes">Browse Dishes</a></li>
+        			  <li class="Add-memu" style="display:none"><a href="#dishes/add">Add Dish</a></li>
+        		  </ul>
+	            <ul class="nav pull-right" role="navigation">
+                <li id="sort-dish" class="dropdown">
+                    <a id="drop1" class="dropdown-toggle" data-toggle="dropdown" role="button" href="#">
+                          Sort<span class="caret"></span>
+                    </a>                           
+                    <ul class="dropdown-menu" aria-labelledby="drop1" role="menu">
+                        <li role="presentation"><a href="#" tabindex="-1" role="menuitem"><label class="radio"><input type="radio" name="imm" value="name">Name</label></a></li>
+                        <li role="presentation"><a href="#" tabindex="-1" role="menuitem"><label class="radio"><input type="radio" name="imm" value="venue">Venue</label></a></li>
+                        <li role="presentation"><a href="#" tabindex="-1" role="menuitem"><label class="radio"><input type="radio" name="imm" value="distance">Distance</label></a></li>
+                    </ul>
+                </li>
+                <li id="sign-up" class="dropdown">
+                       <a class="dropdown-toggle" id="register" data-toggle="dropdown" role="button" href="#">
+                           Sign Up<b class="caret"></b>
+                       </a>
+                       <div class="dropdown-menu" style="padding: 20px">
+                         <form id="signup_form" accept-charset="UTF-8">
+                          
+                          <div class="control-group">
+                              <div class="controls">
+                                 <input type="text" id="su-username" name="username" required title="Username is required" autofocus placeholder="Username" size="30">
+                                 <span class="help-inline"></span>
+                               </div>
+                          </div>
+
+                          <div class="control-group">
+                              <div class="controls">
+                                  <input type="email" id="su-email" name="email" required title="Email address is required" placeholder="Email Address" style="margin-bottom: 0px;">
+                                  <span class="help-inline"></span>
+                              </div>
+                          </div>
+                          
+                          <div class="control-group">
+                              <div class="controls">
+                                  <input type="password" style="margin-bottom: 0px;" id="su-password" name="password" required title="Password must contain at least 8 characters, including UPPER/lower-case letters and digits" placeholder="Password" size="30">
+                                  <span class="help-inline"></span>
+                              </div>
+                          </div>
+
+                          <div class="control-group">
+                              <div class="controls">
+                                  <input type="password"  id="su-repassword" name="repassword" style="margin-bottom: 0px;" type="password" placeholder="Re-entered Password" size="30">
+                                  <span class="help-inline"></span>
+                              </div>
+                          </div>
+                            
+                          <div class="form-actions">
+                              <a id="signup" class="btn btn-primary signup">Sign Up</a>
+                          </div>
+                         </form> <!-- Signup form -->
+                       </div>  <!-- dropdown menu -->
+                 </li> <!-- dropdown menu -->
+
+
+
+                 <li class="dropdown" id="logindrop">
+                      <a class="dropdown-toggle" id="greet" data-toggle="dropdown">Sign In<strong class="caret"></strong></a>
+                      <div class="dropdown-menu" style="padding: 20px">
+
+                        <!-- Signin form -->
+                        <form id="login_form" accept-charset="UTF-8">
+                         
+                          <div class="control-group">
+                              <div class="controls">
+                                <input id="username" class="logintext" type="text" name="username" required title="Username is required" autofocus placeholder="Username" size="30"/>
+                                <span class="help-inline"></span>
+                              </div>
+                          </div>
+      
+                          <div class="control-group">
+                              <div class="controls">
+                                <input id="password" class="logintext" type="password" name="password" placeholder="Password" size="30" />
+                                <span class="help-inline"></span>
+                              </div>
+                          </div>
+
+                            <input id="remember" class="logintext" type="checkbox" name="remember" value="1" />
+                            <label class="logintext string optional" for="user_remember_me">Remember me</label>
+
+                           <div id="logoutUser"></div>
+                        <div class="form-actions">
+                            <a href="#" class="btn btn-primary login">Sign In</a>
+                            <a href="#" style="display:none" class="btn btn-primary logout">Sign Out</a>
+                        </div>
+
+                    </form>  <!-- Signin form -->
+
+                  </div>  <!-- dropdown-menu -->
+                </li>  <!-- dropdown logindrop -->
+
+                <li class="about-memu"><a href="#about">About</a></li>
+            </ul>
+           </div>
+        </div>
+    </div>      
+</div>
+
+
+<!-- notification panel -->
+<div class="alert alert-success" style="display:none"></div>
+
+
+
+
+
+
+
+
+
+
+

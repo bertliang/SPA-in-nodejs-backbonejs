@@ -1,0 +1,30 @@
+{
+  "name": "workspace",
+  "version": "0.0.0",
+  "description": "SPA in nodejs and backbonejs",
+  "main": "app.js",
+  "dependencies": {
+    "express": "~3.4.8",
+    "bcrypt": "~0.7.8",
+    "gm": "~1.17.0",
+    "mongodb": "~1.4.29",
+    "mongoose": "~3.8.21",
+    "underscore": "~1.7.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "\"echo \\\"Error: no test specified\\\" && exit 0\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bertliang/SPA-in-nodejs-backbonejs.git"
+  },
+  "keywords": [
+    "example"
+  ],
+  "author": "Bert Liang",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/bertliang/SPA-in-nodejs-backbonejs/issues"
+  }
+}

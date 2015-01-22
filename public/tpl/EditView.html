@@ -1,0 +1,116 @@
+<div class="row-fluid">
+
+  <form class="form-horizontal span12">
+    <!-- ADD YOUR CODE HERE -->
+    <button id="save" class="btn btn-primary">Save</button>
+    <button id="delete" class="btn btn-default">Delete</button>
+
+    <h2>Dish Details</h2>
+
+    <fieldset>
+      <legend></legend>
+
+      <div class="row">
+        <div class="span7">
+
+    <!-- ADD YOUR CODE HERE -->
+          <div class="control-group">
+            <label for="name" class="control-label">Dish</label>
+            <div class="controls">
+              <input type="text" id="name" name="name" value="<%- name %>"/>
+              </br>
+                <span class="help-inline"> </span> 
+            </div>
+          </div>
+
+
+
+          <div class="control-group">
+            <label for="venue" class="control-label">Served By</label>
+            <div class="controls">
+              <input type="text" id="venue" name="venue" value="<%- venue %>"/>
+              </br>
+                <span class="help-inline"> </span>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label for="disciptive" class="control-label">Dish/Venue Info</label>
+            <div class="controls">
+              <input type="text" id="info" name="info" value="<%- info %>"/>
+              </br>
+                <span class="help-inline"> </span>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label for="URL" class="control-label">Web site URL</label>
+            <div class="controls">
+              <input type="text" id="url" name="url" value="<%- url %>"/>
+              </br>
+                <span class="help-inline"> </span>
+            </div>
+          </div>
+        
+          
+          <div class="control-group"  style="display: inline-block; vertical-align: top;">
+            <label for="adderss" class="control-label">
+                  Street Adreess
+                  Number Street City
+            </label>
+            <div class="controls">
+              <input type="text" id="number" name="number" value="<%- number %>"/>
+            </br>
+              <span class="help-inline"> </span>
+            </div>
+          </div>
+  
+            <div class="control-group" style="display: inline-block; vertical-align: top;">
+              <div class="controls" style="margin-left: 10px">
+              <input type="text" id="street" name="street" value="<%- street %>"/>
+              <button id="useMyLocation" class="btn btn-primary">use my location</button>
+              </br>
+               <span class="help-inline"> </span>
+              </div>
+            </div>
+             
+    
+          <div class="control-group" style="margin-top: 10px  ">
+            <div class="controls">
+            <input type="text" id="city" name="city" value="<%- city %>"/>
+            </br>
+            <span class="help-inline"> </span>
+            </div>
+          </div>
+
+         
+
+        </div> <!-- span7 main input panel -->
+         
+        
+        <div class="span5">
+         <div id="drop-image">
+            <img src="<%- Image %>_edit.jpg">
+            </div>
+          
+          <div id="choose-image">
+          
+          <label> drag&drop photo</br>
+          onto above image or
+            <input type="file" name="image"  accept="image/*" capture="camera" id="upload-image" class="btn btn-primary btn-sm">
+          </label>
+          </div>
+        </div>  <!--span5 end-->
+         
+        
+       </div> <!-- row -->
+        
+    </fieldset>
+
+    
+    
+
+  </form>
+
+</div> <!-- row-fluid -->
+<div id="google-map"></div>
