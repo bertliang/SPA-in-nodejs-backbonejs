@@ -6,7 +6,7 @@ port: 8080,
 
 sessionKey: 'sess.eatz',
 sessionSecret: 'login_secret',
-sessionTimeout: 1000*60*2,  // 2 minute session timeout
+sessionTimeout: 1000*60*20,  // 2 minute session timeout
 
 env:'development',
 
