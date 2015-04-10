@@ -167,7 +167,7 @@ exports.signup = function(req, res) {
     var user = new UserModel(req.body);
     bcrypt.genSalt(10, function(err, salt) {
     // store the hashed-with-salt password in the DB
-        bcrypt.hash(user.password, salt, function(err, hash) {
+        bcrypt.hash(user.password, salt, null,function(err, hash) {
             user.password = hash;// incorporate hash output and salt value
             user.save(function (err, result) {
                 if (!err) {
