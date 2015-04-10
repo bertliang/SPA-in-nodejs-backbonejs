@@ -1,11 +1,11 @@
 {
-  "name": "workspace",
+  "name": "SPA-in-nodejs-backbonejs",
   "version": "0.0.0",
-  "description": "SPA in nodejs and backbonejs",
+  "description": "This is Single Page App using backbone.js for client side, node.js for server side, mongodb for database. (This is a UTSC web project, please no copy and paste)",
   "main": "app.js",
   "dependencies": {
+    "bcrypt-nodejs": "~0.0.3",
     "express": "~3.4.8",
-    "bcrypt": "~0.7.8",
     "gm": "~1.17.0",
     "mongodb": "~1.4.29",
     "mongoose": "~3.8.21",
@@ -13,16 +13,13 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "\"echo \\\"Error: no test specified\\\" && exit 0\""
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/bertliang/SPA-in-nodejs-backbonejs.git"
   },
-  "keywords": [
-    "example"
-  ],
-  "author": "Bert Liang",
+  "author": "",
   "license": "BSD-2-Clause",
   "bugs": {
     "url": "https://github.com/bertliang/SPA-in-nodejs-backbonejs/issues"
