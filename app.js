@@ -9,7 +9,8 @@
  * the value returned by require(), in this case e.g. eatz.api
  * The convention is use the same name for variable and module.
  */
-var http = require("https"),   // ADD CODE
+//var http = require("https")
+var http = require("http"),   // ADD CODE
     // NOTE, use the version of "express" linked to the assignment handout
     express = require("express"), // Express Web framework   ... ADD CODE
     fs = require("fs"),
@@ -83,14 +84,20 @@ app.post('/auth', eatz.signup);
 app.put('/auth', eatz.auth);
 
 // use RSA private key and public key
-var option = {
-    key : fs.readFileSync('key.pem'),  // RSA private key
-    cert : fs.readFileSync('cert.pem')  // RSA public key
-}
+//var option = {
+//    key : fs.readFileSync('key.pem'),  // RSA private key
+//    cert : fs.readFileSync('cert.pem')  // RSA public key
+//}
+
+http.createServer(app).listen(app.get('port'), process.env.IP, function () {
+    console.log("Express server listening on port %d in %s mode",
+            app.get('port'), config.env );
+});
+
 
 
 // Start HTTPS server, use RSA private key and public key
-http.createServer(option, app).listen(app.get('port'), process.env.IP, function () {
-    console.log("Express server listening on port %d in %s mode",
-    		app.get('port'), config.env );
-});
+//http.createServer(option, app).listen(app.get('port'), process.env.IP, function () {
+//    console.log("Express server listening on port %d in %s mode",
+//    		app.get('port'), config.env );
+//});
